@@ -6,6 +6,16 @@ body{
 	background: url("../img/background.png") repeat-x;
 	background-color: #0c739f;
 }
+#triangle-down {
+  float: right;
+  margin-top: 8px;
+  margin-left: 6px;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 5px solid white;
+}
 .wrapper{
 	margin: 1px auto;
 	width: 1000px;
@@ -65,7 +75,7 @@ body{
 	position: relative;
 	overflow: hidden;
 	top: 91px;
-	left: 520px;
+	left: 535px;
 	display: -webkit-inline-box;
 	height: 60px;
 	width: 400px;
@@ -78,6 +88,7 @@ body{
 	list-style: none;
 	float: left;
 	padding: 0 50px 0 50px;
+  display: block;
 	
 }
 .flag_menu li{
@@ -86,6 +97,7 @@ body{
 	list-style: none;
 	float: left;
 	display: block;
+
 }
 
 
@@ -94,63 +106,18 @@ a.head:visited{color: #128aa7;}
 a.head:active{color: #128aa7;}
 a.head:hover{color: #128aa7;}
 
-.india {
-	background: url("../img/india.png") center top no-repeat;
-	height: 56px;
-    margin-top: 0px;
-    padding-top: 43px;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: block;
+.head{
+  text-align: center;
+ padding-left: 5px;
+ padding-right: 5px;
 }
 
-.nepal{
-	background: url("../img/nepal.png") center top no-repeat;
-	height: 56px;
-    margin-top: 0px;
-    padding-top: 43px;
-    padding-left: 15px;
-    padding-right: 15px;	
-}
-.tibet{
-	background: url("../img/tibet.png") center top no-repeat;
-	height: 56px;
-    margin-top: 0px;
-    padding-top: 43px;
-    padding-left: 15px;
-    padding-right: 15px;	
-}
-.butan{
-	background: url("../img/butan.png") center top no-repeat;	
-	height: 56px;
-    margin-top: 0px;
-    padding-top: 43px;
-    padding-left: 15px;
-    padding-right: 15px;
-}    
-.sri-lanka{
-	background: url("../img/srilanka.png") center top no-repeat;
-	height: 56px;
-    margin-top: 0px;
-    padding-top: 43px;	
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.maldivi{
-	background: url("../img/maldivi.png") center top no-repeat;	
-	height: 56px;
-    margin-top: 0px;
-    padding-top: 43px;
-    padding-left: 7px;
-    padding-right: 7px;
-}
+
 .pic1{
-	border-top: solid 1px #128aa7;
+	height: 237px;
+  border-top: solid 1px #128aa7;
 	border-bottom: solid 1px #128aa7;
-    background: url("../img/picture.jpg") center top no-repeat;	
-}
-.picture{
-	height: 100%;
+  background: url("../img/picture.jpg") center top no-repeat;	
 }
 
 /*------Menu----------*/
@@ -158,6 +125,7 @@ a {
   text-decoration: none;
   outline: none;
   transition: .3s ease-in-out;
+  text-align: center;
 }
 p {
   font-family: 'Tahoma';
@@ -169,7 +137,6 @@ p {
   background: #323232;
   margin-bottom: 50px;
   text-align: center;
-  z-index: 5;
   border-top: solid 5px black;
 }
 .header-container {
@@ -219,10 +186,11 @@ i {
   margin-left: 10px;
 }
 .submenu {
+  border-top: solid 1px black;
   background: #323232;
   position: absolute;
   left: 0;
-  top: 100%;
+  top: 125%;
   z-index: 10;
   width: 120px; /*ширина выпадающего меню*/
   opacity: 0;
@@ -237,6 +205,9 @@ i {
   -o-transform-origin:0 0;
   -ms-transform-origin:0 0;
   transform-origin:0 0;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(79,79,80,1);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(79,79,80,1);
+  box-shadow: 0px 4px 4px 0px rgba(79,79,80,1);
 }
 .submenu a {
   color: white;
@@ -268,6 +239,8 @@ li ul li:last-child a {
 	position: relative;
 	height: 500px;
 	top: 4px;
+  font-size: 14px;
+  
 
 }
 .left_blok{
